@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let mangKyTu = prompt("nhap vao 1 mang ki tu cach nhau bang  dau ,");
+        let kyTu = prompt("1 ki tu  bat  ki");
+        let a = mangKyTu.split(",");
+        let b = kyTu.split("");
+        let count = 0;
+        let check = true;
+
+        function kiemTra() {
+            for (let i = 0; i < a.length; i++) {
+                if (b[0] == a[i]) {
+                    count++;
+                    check = false;
+                }
+            }
+            if (!check) {
+                console.log(count);
+            } else {
+                console.log("-1");
+            }
+        }
+        kiemTra();
+    </script>
+</body>
+
+</html>
